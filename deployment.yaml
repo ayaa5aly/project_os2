@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myproject
+  labels:
+    app: myapp
+spec:
+  selector: 
+    matchLabels:
+      app: myapp
+  replicas: 3
+  template:
+    metadata:
+      name: myproject
+      labels:
+        app: myapp
+    spec:
+      containers:
+        -  image: ay125/lasttrying
+           name: myproject   

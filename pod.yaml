@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myproject
+  labels:
+    app: myapp
+spec:
+  containers:
+    
+image: ay125/lasttrying
+    name: myproject
